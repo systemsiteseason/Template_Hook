@@ -31,5 +31,5 @@ DWORD64 FindPattern(char* module, char* pattern, char* mask)
 		}
 	}
 
-	return NULL;
+	return -1;
 }
