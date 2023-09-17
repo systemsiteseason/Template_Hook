@@ -42,7 +42,7 @@ __int64 __fastcall CText_Hk(__int64 rcx, __int64 rdx, __int64 r8)
         if (txt == L"Press Any Button")
         {
             *(DWORD64*)rdx = (DWORD64)test;
-            *(DWORD*)(rdx + 8) = wcslen(test);
+            *(DWORD*)(rdx + 8) = wcslen(test) + 1;
             *(DWORD*)(rdx + 0xC) = wcslen(test) + 4;
         }
     }
