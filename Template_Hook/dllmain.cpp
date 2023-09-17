@@ -43,7 +43,7 @@ __int64 __fastcall CText_Hk(__int64 rcx, __int64 rdx, __int64 r8)
         {
             *(DWORD64*)rdx = (DWORD64)test;
             *(DWORD*)(rdx + 8) = wcslen(test);
-            *(DWORD*)(rdx + 0xC) = wcslen(test);
+            *(DWORD*)(rdx + 0xC) = wcslen(test) + 4;
         }
     }
 
